@@ -26,6 +26,7 @@ video {
 html,
 body {
   height: 100%;
+  background-color: black;
 }
 
 /* =============================================================================
@@ -47,7 +48,8 @@ body {
 
 .video {
   position: fixed;
-  top: 50%; left: 50%;
+  top: 50%; 
+  left: 50%;
   z-index: 1;
   min-width: 100%;
   min-height: 100%;
@@ -60,11 +62,19 @@ body {
 .content {
   position: relative;
   z-index: 2;
-  top:50%;
+  top: 25%;
 }
 
-.btn-big{
-  border:2px solid white;
+.btn-big div{
+    width: 8em!important;
+    height: 2em!important;
+    border: solid 2px white;
+    padding: 2%;
+    vertical-align: middle;
+    font-size: 2em;
+}
+.btn-big div:hover{
+    background-color: #2a95be;
 }
 
 /* =============================================================================
