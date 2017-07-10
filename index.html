@@ -21,7 +21,7 @@
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
         
         <!-- Fonts -->
-        
+        <link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet"> 
         
         <!-- Custom -->
         <link href="css/main.css" rel="stylesheet">
@@ -34,15 +34,43 @@
         <![endif]-->
     </head>
     <body>
-        
-        <video id="my-video" class="video" autoplay="autoplay" loop="loop" muted="" width="100%" height="auto">
+       
+        <div class="container content">
+            <div class="row">
+                <div class="col-md-offset-4 col-md-4 text-center">
+                    <img class="m-2" src="img/logo.png" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-3 col-md-3 text-center">
+                    <a class="white p-2" href="onepage.html">Descubre</a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <a class="white p-2" href="onepage.html#contacto">Contacto</a>
+                </div>
+            </div>
+        </div>
+         
+        <video id="my-video" class="video" muted loop>
           <source src="media/demo.mp4" type="video/mp4" />
         </video>
-        <div class="content">
-            
-        </div>
         
     </body>
+    <script>
+(function() {
+  /**
+   * Video element
+   * @type {HTMLElement}
+   */
+  var video = document.getElementById("my-video");
+  /**
+   * Check if video can play, and play it
+   */
+  video.addEventListener( "canplay", function() {
+    video.play();
+  });
+})();
+</script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
